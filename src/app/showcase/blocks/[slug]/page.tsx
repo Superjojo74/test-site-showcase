@@ -146,7 +146,7 @@ export default function BlockDetailPage({ params }: { params: Promise<{ slug: st
     const root = document.documentElement
     Object.entries(theme.tokens).forEach(([key, value]) => {
       const cssVar = key.replace(/([A-Z])/g, '-$1').toLowerCase()
-      root.style.setProperty(`--${cssVar}`, value)
+      root.style.setProperty(`--${cssVar}`, `hsl(${value})`)
     })
     return () => {
       Object.keys(theme.tokens).forEach(key => {

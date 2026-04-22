@@ -19,7 +19,7 @@ export default function ThemesPage() {
             <div key={theme.slug} className="rounded-2xl border border-border bg-card overflow-hidden">
               {/* Color preview strip */}
               <div className="flex h-16">
-                <div className="flex-1" style={{ background: `hsl(${theme.tokens.background})` }} />
+                <div className="flex-1" style={{ backgroundColor: `hsl(${theme.tokens.background})` }} />
                 <div className="flex-1" style={{ background: `hsl(${theme.tokens.primary})` }} />
                 <div className="flex-1" style={{ background: `hsl(${theme.tokens.accent})` }} />
                 <div className="flex-1" style={{ background: `hsl(${theme.tokens.secondary})` }} />
@@ -33,7 +33,7 @@ export default function ThemesPage() {
                 </div>
 
                 {/* Sample text with theme colors */}
-                <div className="mt-3 p-4 rounded-lg" style={{ background: `hsl(${theme.tokens.background})` }}>
+                <div className="mt-3 p-4 rounded-lg" style={{ backgroundColor: `hsl(${theme.tokens.background})` }}>
                   <p className="text-sm font-bold" style={{ color: `hsl(${theme.tokens.foreground})` }}>Titre exemple</p>
                   <p className="text-xs mt-1" style={{ color: `hsl(${theme.tokens.mutedForeground})` }}>Texte secondaire</p>
                   <div className="mt-2 inline-block px-3 py-1 rounded text-xs font-bold" style={{ background: `hsl(${theme.tokens.primary})`, color: `hsl(${theme.tokens.primaryForeground})` }}>

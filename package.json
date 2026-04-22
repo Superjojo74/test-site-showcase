@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Block showcase — visual preview of all blocks, headers, footers and themes from test-site-master",
   "scripts": {
-    "dev": "next dev -p 3003 --turbopack",
+    "dev": "next dev -p 3003 --webpack",
     "build": "next build",
     "start": "next start -p 3003",
     "sync": "tsx scripts/sync.ts"
