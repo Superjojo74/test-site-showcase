@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.env
+.env.local
+.DS_Store
+*.log
+
+# Synced blocks (generated from master, not committed)
+src/blocks/
+src/components/blocks/
+src/registry.ts
